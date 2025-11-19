@@ -49,3 +49,17 @@ function montaTr(paciente){
     pacienteTr.appendChild(gorduraTd);
     pacienteTr.appendChild(imcTd);
 }
+
+function montaTd(paciente) {
+    var paciente = document.createElement("tr");
+    pacienteTr.classList.add("paciente");
+
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-nome"));
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-peso"));
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-altura"));
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-gordura"));
+    pacienteTr.appendChild(montaTd(paciente.nome, "info-imc"));
+
+    return pacienteTr;
+
+}

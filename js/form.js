@@ -13,6 +13,8 @@ botaoAdicionar.addEventListener("click", function(){
 
     tabela.appendChild(pacienteTr);
 
+    form.requestFullscreen();
+
 });
 
 // Dividir em tres funções para trabalhar com tarefas menores
